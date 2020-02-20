@@ -3,7 +3,7 @@ const takeANumber = (line, name) => {
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 };
 
-const nowServing = (line) => line.length ? `Currently serving ${line.shift()}.`: 'There is nobody waiting to be served!';
+const nowServing = line => line.length ? `Currently serving ${line.shift()}.`: 'There is nobody waiting to be served!';
 
 const currentLine = (line) => {
   let currentLine = 'The line is currently: ';
